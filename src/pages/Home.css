@@ -14,9 +14,59 @@
     display: flex;
     color: aliceblue;
     font-size: 250px;
-    position: absolute;
+    position: relative;
     margin-top: 80px;
 }
 body{
   background-color: #ccc;
 }
+.bywaly{
+  position: relative;
+  margin-top: -150px;
+  font-size: 40px;
+  margin-left: 100px;
+}
+.slideb{
+  position: relative;
+  width: 95%;
+  border-radius: 30px;
+}
+.imagemprincipal{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.SlideA{
+  height: 70vh;
+  margin-right: 10px;
+  margin-top: 100px;
+
+}
+.imagesHomepage{
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+  padding: 10px;
+  max-width: 95%;
+  margin-left: 35px;
+}
+.SlideC{
+  height: 70vh;
+  margin-top: -150px;
+  margin-bottom: 100px;
+}
+.SlideA, .SlideC, .slideD{
+  border-radius: 20px;
+
+}
+.slideD{
+  height: 70vh;
+  margin-top: -90px;
+}
+.slidesrigth{
+  position: relative;
+
+}
+
