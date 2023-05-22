@@ -1,3 +1,15 @@
 .help{
     min-height: 72vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ccc;
+    flex-direction: column;
+
+}
+.texthelp{
+    font-size: 40px;
+}
+.socialmediashelp{
+    font-size: 30px;
 }

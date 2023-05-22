@@ -1,0 +1,41 @@
+.list-products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+.items{
+  margin-top: 150px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+.card-prod {
+  list-style: none;
+  background: #ffffff;
+  cursor: pointer;
+  padding-bottom: 15px;
+  border-radius: 20px 0 20px 0;
+  border: 2px solid #000;
+  height: 400px;
+  width: 350px;
+  margin: 5px 20px 20px 20px;
+  padding: 10px;
+}
+
+.card-prod img {
+  border-radius: 20px 0 20px 0;
+  width: 320px;
+  height: 250px;
+  margin-top: -20px;
+  margin-bottom: 15px;
+  border: 2px solid #000;
+}
+
+.card-prod .img img {
+  object-fit: cover;
+}

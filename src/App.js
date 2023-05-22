@@ -7,6 +7,7 @@ import Products from './pages/Products';
 import NotFound from './pages/NotFound';
 import Help from './pages/Help';
 import About from './pages/About';
+import SearchPage from './pages/SearchPage';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='*' element={<NotFound/>}/>
         <Route path='/help' element={<Help/>} />
         <Route path='/about' element={<About/>}/>
+        <Route path="/search" element={<SearchPage/>}/>
       </Routes>
       <Rodape/>
       </BrowserRouter>

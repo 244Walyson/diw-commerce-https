@@ -10,6 +10,7 @@
 }
 .header-fix{
     position: fixed;
+    z-index: 100;
 }
 .logo{
     font-family: 'Castoro Titling', cursive;

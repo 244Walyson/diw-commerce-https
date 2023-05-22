@@ -1,3 +1,8 @@
 .products{
-    min-height: 72vh;
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+}
+.itemsproducts{
+    margin-top: 280px;
 }

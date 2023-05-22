@@ -1,11 +1,7 @@
-.slides {
-    width: 100%;
-  }
-  
-  .slides img {
-    max-width: 100%;
-  }
-  .headName{
+.products{
+    min-height: 72vh;
+}
+.headNameprod{
     width: 100%;
     margin: 0;
     padding: 0;
@@ -16,7 +12,5 @@
     font-size: 250px;
     position: absolute;
     margin-top: 80px;
-}
-body{
-  background-color: #ccc;
+    z-index: 0;
 }
