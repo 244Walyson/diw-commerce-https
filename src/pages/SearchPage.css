@@ -1,3 +1,42 @@
 .SearchPage{
     min-height: 72vh;
+    justify-content: center;
 }
+.next , .previw {
+    font-size: 20px;
+  }
+  .buttonspages button{
+    width: 60px;
+    font-size: 30px;
+    border-radius: 20px;
+    margin: 0 20px;
+    background-color: aliceblue;
+    border: none;
+    transition: all .7s;
+  }
+  .buttonspages button:hover{
+    background-color: #7f88d5bd;
+    cursor: pointer;
+  }
+  .buttonspages{
+    display: flex;
+    font-size: 30px;
+    padding: 10px;
+    justify-content: center;
+  }
+  .buttonspages p{
+   font-size: 35px;
+  }
+  .starcheia {
+    color: gold; /* Define a cor do ícone */
+    font-size: 20px; /* Define o tamanho do ícone */
+  }
+  .starvazia {
+    color: rgb(132, 131, 131); /* Define a cor do ícone */
+    font-size: 20px; /* Define o tamanho do ícone */
+  }
+  .stars{
+    padding: 5px;
+    width: 50%;
+    
+  }

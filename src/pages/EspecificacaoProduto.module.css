@@ -1,0 +1,79 @@
+.especificacao{
+    min-height: 72vh;
+    display: flex;
+}
+.produtodetails{
+    display: flex;
+}
+.imgprodutoespec img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+  }
+.imgprodutoespec{
+    margin-left: 50px;
+    margin-top: 100px;
+    align-items: center;
+    max-height: 80vh;
+    justify-content: center;
+    width: 45%;
+    margin-bottom: 50px;
+}
+.textrigth{
+    margin-top: 120px;
+    width: 55%;
+    margin-right: 50px;
+    margin-left: auto;
+}
+.produtoespicificacao h3{
+    font-size: 40px;
+    padding: 20px;
+}
+.produtoespicificacao h4{
+    margin-top: 20px;
+    font-size: 35px;
+    padding: 20px;
+}
+.produtoespicificacao p{
+    padding: 20px;
+}
+.produtoespicificacao button{
+    width: 400px;
+    height: 50px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 80px;
+    background-color: rgb(141, 226, 226);
+    color: rgb(0, 0, 0);
+    transition: all .5s;
+    margin-top: 130px;
+    border: none;
+}
+.produtoespicificacao button:hover{
+    cursor: pointer;
+    filter: brightness(0.9);
+    transform: scale(1.01);
+}
+.starcheia {
+    color: gold; /* Define a cor do ícone */
+    font-size: 40px; /* Define o tamanho do ícone */
+  }
+.starvazia {
+    color: rgb(132, 131, 131); /* Define a cor do ícone */
+    font-size: 40px; /* Define o tamanho do ícone */
+}
+.description{
+    text-align: center;
+    justify-content: center;
+    width: 50%;
+    padding-left: 30px;
+    text-align: justify;
+}
+.description p{
+    font-weight: bold;
+    margin-left: -20px;
+    margin-bottom: -20px;
+}

@@ -1,5 +1,8 @@
 import React from 'react'
 import "./Help.css"
+import { faGithub, faTwitter, faInstagram, faTelegram } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 const Help = () => {
   return (
@@ -7,9 +10,12 @@ const Help = () => {
         <p className="texthelp">
           Se precisar de ajuda entre em contato comigo
         </p>
-        <p className="socialmediashelp">
-          w i g f
-        </p>
+        <div className="socialmediashelp">
+        <p><FontAwesomeIcon icon={faGithub} className="iconsmedia"/></p>
+          <p><FontAwesomeIcon icon={faTwitter} className="iconsmedia"/></p>
+          <p><FontAwesomeIcon icon={faInstagram} className="iconsmedia"/></p>
+          <p><FontAwesomeIcon icon={faTelegram} className="iconsmedia"/></p>
+        </div>
     </div>
   )
 }

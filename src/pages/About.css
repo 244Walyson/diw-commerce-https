@@ -28,3 +28,13 @@
     position: relative;
     min-width: 100%;
 }
+.socialmediaabout{
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+.socialmediaabout p{
+    padding: 10px;
+}

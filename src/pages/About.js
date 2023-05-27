@@ -1,6 +1,9 @@
 import React from 'react'
 import "./About.css"
 import WalyName from '../components/WalyName'
+import { faGithub, faTwitter, faInstagram, faTelegram } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 const About = () => {
   return (
@@ -23,7 +26,12 @@ const About = () => {
           garantir que a página se adaptasse a diferentes dispositivos, como desktops, 
           tablets e smartphones.  
         </p>
-        <p className='socialmediaabout'> w i f g </p>
+        <div className='socialmediaabout'>
+          <p><FontAwesomeIcon icon={faGithub} className="iconsmedia"/></p>
+          <p><FontAwesomeIcon icon={faTwitter} className="iconsmedia"/></p>
+          <p><FontAwesomeIcon icon={faInstagram} className="iconsmedia"/></p>
+          <p><FontAwesomeIcon icon={faTelegram} className="iconsmedia"/></p>
+        </div>
         </div>
     </div>
     </>

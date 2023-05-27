@@ -14,7 +14,7 @@ const Navbar = () => {
   const handleSubmit = (e) =>{
     e.preventDefault()
 
-    navigate("/search?"+pesquisa)
+    navigate("/search?query=" + pesquisa)
   }
 
 
@@ -30,7 +30,7 @@ const Navbar = () => {
     </label>
     <nav className="navbar">
         <Link to={"/"}>Home</Link>
-        <Link to={"/produtos"}>Produtos</Link>
+        <Link to={"/products"}>Produtos</Link>
         <Link to={"/about"}>About</Link>
         <Link to={"/help"}>Help</Link>
     </nav>

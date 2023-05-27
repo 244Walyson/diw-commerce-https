@@ -1,0 +1,38 @@
+.products{
+    min-height: 72vh;
+}
+.headNameprod p{
+  font-size: 20px;
+  margin-top: -50px;
+  color: rgb(43, 43, 43);
+}
+.headNameprod h2{
+  font-size: 250px;
+}
+.headNameprod{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    color: rgb(190, 198, 204);
+    position: absolute;
+    margin-top: 80px;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+}
+.starcheia {
+    color: gold; /* Define a cor do ícone */
+    font-size: 20px; /* Define o tamanho do ícone */
+  }
+  .starvazia {
+    color: rgb(132, 131, 131); /* Define a cor do ícone */
+    font-size: 18px; /* Define o tamanho do ícone */
+  }
+  .stars{
+    padding: 5px;
+    width: 50%;
+    
+  }

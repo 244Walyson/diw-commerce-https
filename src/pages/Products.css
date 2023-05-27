@@ -1,5 +1,4 @@
 .products{
-    background-color: #ccc;
     display: flex;
     flex-direction: column;
 }

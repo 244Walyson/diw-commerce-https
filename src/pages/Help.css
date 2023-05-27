@@ -11,5 +11,9 @@
     font-size: 40px;
 }
 .socialmediashelp{
-    font-size: 30px;
+    font-size: 50px;
+    display: flex;
+}
+.socialmediashelp p{
+    padding: 10px;
 }

@@ -1,0 +1,86 @@
+.listproducts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+.items{
+  margin-top: 150px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+.cardprod a, .items a{
+  text-decoration: none;
+  color: #000;
+}
+.cardprod {
+  list-style: none;
+  background: #ffffff;
+  cursor: pointer;
+  padding-bottom: 15px;
+  border-radius: 20px 0 20px 0;
+  height: 400px;
+  width: 350px;
+  margin: 5px 20px 20px 40px;
+  padding: 10px;
+  transition: all .5s;
+}
+.cardprod:hover{
+  transform: scale(1.02);
+}
+
+.cardprod img {
+  width: 320px;
+  height: 250px;
+  margin-top: -20px;
+  margin-bottom: 15px;
+  border: 2px solid #e5e4e4;
+  border-radius: 20px;
+
+}
+
+.cardprod .img img {
+  object-fit: cover;
+}
+.next , .previw {
+  font-size: 20px;
+}
+.buttonspages button{
+  width: 60px;
+  font-size: 30px;
+  border-radius: 20px;
+  margin: 0 20px;
+  background-color: aliceblue;
+  border: none;
+  transition: all .7s;
+}
+.buttonspages button:hover{
+  background-color: #7f88d5bd;
+  cursor: pointer;
+}
+.buttonspages{
+  display: flex;
+  font-size: 30px;
+  padding: 10px;
+}
+.buttonspages p{
+ font-size: 35px;
+}
+.starcheia {
+  color: gold; /* Define a cor do ícone */
+  font-size: 25px; /* Define o tamanho do ícone */
+}
+.starvazia {
+  color: rgb(132, 131, 131); /* Define a cor do ícone */
+  font-size: 20px; /* Define o tamanho do ícone */
+}
+.stars{
+  padding: 5px;
+  width: 50%;
+  
+}

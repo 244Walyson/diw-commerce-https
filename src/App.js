@@ -8,6 +8,9 @@ import NotFound from './pages/NotFound';
 import Help from './pages/Help';
 import About from './pages/About';
 import SearchPage from './pages/SearchPage';
+import SearchByCategory from './pages/SearchByCategory';
+import ProductsByCategory from './pages/ProductsByCategory';
+import EspecificacaoProduto from './pages/EspecificacaoProduto';
 
 function App() {
   return (
@@ -16,11 +19,14 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path="/produtos" element={<Products/>} />
+        <Route path="/products" element={<Products/>} />
         <Route path='*' element={<NotFound/>}/>
         <Route path='/help' element={<Help/>} />
         <Route path='/about' element={<About/>}/>
         <Route path="/search" element={<SearchPage/>}/>
+        <Route path='/category' element={<SearchByCategory/>}/>
+        <Route path='/category:' element={<ProductsByCategory/>}/>
+        <Route path='/products/:id' element={<EspecificacaoProduto/>}/>
       </Routes>
       <Rodape/>
       </BrowserRouter>

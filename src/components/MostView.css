@@ -4,7 +4,7 @@
   align-items: center;
   min-width: 100%;
   max-width: 100%;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .items{
   margin-top: 150px;
@@ -14,26 +14,33 @@
   max-width: 100%;
   flex-wrap: wrap;
 }
+.card-prod a, .items a{
+  text-decoration: none;
+  color: #000;
+}
 .card-prod {
   list-style: none;
   background: #ffffff;
   cursor: pointer;
   padding-bottom: 15px;
   border-radius: 20px 0 20px 0;
-  border: 2px solid #000;
-  height: 400px;
-  width: 350px;
-  margin: 5px 20px 20px 20px;
+  height: 360px;
+  width: 280px;
+  margin: 5px;
   padding: 10px;
-}
+  transition: all .5s;
 
+}
+.card-prod:hover{
+  transform: scale(1.02);
+}
 .card-prod img {
-  border-radius: 20px 0 20px 0;
-  width: 320px;
-  height: 250px;
+  width: 260px;
+  height: 210px;
   margin-top: -20px;
   margin-bottom: 15px;
-  border: 2px solid #000;
+  border: 2px solid #e5e4e4;
+  border-radius: 20px;
 }
 
 .card-prod .img img {

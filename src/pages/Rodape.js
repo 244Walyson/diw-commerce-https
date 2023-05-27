@@ -3,6 +3,10 @@ import "./Rodape.css"
 import 'boxicons'
 import { Link } from 'react-router-dom'
 import 'boxicons'
+import { faGithub, faTwitter, faInstagram, faTelegram } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+
 
 const Rodape = () => {
   return (
@@ -18,9 +22,12 @@ const Rodape = () => {
         </div>
         <div className="location">
            <p><Link>PUC MINAS BETIM</Link></p>
-           <div className='socialmedia'>
-            
         </div>
+        <div className='socialmedia'>
+          <p><FontAwesomeIcon icon={faGithub} className="iconsmedia"/></p>
+          <p><FontAwesomeIcon icon={faTwitter} className="iconsmedia"/></p>
+         <p><FontAwesomeIcon icon={faInstagram} className="iconsmedia"/></p>
+          <p><FontAwesomeIcon icon={faTelegram} className="iconsmedia"/></p>
         </div>
         
         
@@ -28,8 +35,6 @@ const Rodape = () => {
 
         <div className="detalhes-a"></div>
         <div className="detalhes-b"></div>
-
-
     </div>
   )
 }

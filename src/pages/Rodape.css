@@ -18,6 +18,15 @@
     text-decoration: none;
     padding: 10px;
 }
+.socialmedia{
+    font-size: 40px;
+    padding: 10px;
+    margin: 10px;
+    margin-top: -25px;
+    margin-right: 30px;
+    display: flex;
+}
+
 .rodape p{
     padding: 10px;
 }
