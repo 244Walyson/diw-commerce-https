@@ -7,23 +7,21 @@ import "./MostView.css"
 import { useEffect } from 'react';
 
 const MostView = () => {
-  const [seconds, setSeconds] = useState(10);
+  // const [seconds, setSeconds] = useState(10);
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setSeconds(prevSeconds => prevSeconds + 1);
-    }, 1000);
+  // useEffect(() => {
+  //   const timer = setInterval(() => {
+  //     setSeconds(prevSeconds => prevSeconds + 1);
+  //   }, 1000);
 
-    return () => {
-      clearInterval(timer);
-    };
-  }, []);
+  //   return () => {
+  //     clearInterval(timer);
+  //   };
+  // }, []);
 
   const url = () => {
     let url = '';
-    if (seconds % 5 == 0) {
-      url = "http://diwserver.vps.webdock.cloud:8765/products?page=" + Math.floor(seconds-5);
-    }
+      url = "https://fakestoreapi.com/products?limit=5";
     return url;
   };
 
@@ -48,7 +46,7 @@ const MostView = () => {
    {loading && <p>Carregando...</p>}
     <ul className="items">
       {items &&
-        items.products.slice(0, 5).map((item) => (
+        items.map((item) => (
           
       <Link to={`/products/${item.id}`}>
       <li key={item.id} className="card-prod"> {/* Classe modificada para "card-prod" */}

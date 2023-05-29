@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Items = () => {
   const [page, setPage] = useState(1);
-  const url = "http://diwserver.vps.webdock.cloud:8765/products?page="+page;
+  const url = "https://fakestoreapi.com/products";
   const { data: items, loading } = useFetch(url);
 
   const Rating = (rate) => {
@@ -39,7 +39,7 @@ const Items = () => {
    {loading && <p>Carregando...</p>}
     <ul className={styles.items}>
       {items &&
-        items.products.map((item) => (
+        items.map((item) => (
           
       <Link to={`/products/${item.id}`}>
       <li key={item.id} className={styles.cardprod}> {/* Classe modificada para "card-prod" */}
