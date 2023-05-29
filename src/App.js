@@ -11,18 +11,11 @@ import SearchPage from './pages/SearchPage';
 import SearchByCategory from './pages/SearchByCategory';
 import ProductsByCategory from './pages/ProductsByCategory';
 import EspecificacaoProduto from './pages/EspecificacaoProduto';
-import { Helmet } from 'react-helmet';
 
 
 function App() {
   return (
     <div className="App">
-      <Helmet>
-        <meta
-          http-equiv="Content-Security-Policy"
-          content="default-src 'self' https:; img-src 'self' http: https:;"
-        />
-      </Helmet>
       <BrowserRouter>
       <Navbar/>
       <Routes>
