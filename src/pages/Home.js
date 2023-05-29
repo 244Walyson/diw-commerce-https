@@ -12,7 +12,7 @@ const Home = () => {
     <div>
         
         <div className="slides">
-        <div className="headName">WALYSON</div>
+        <div className="headName"><h4>WALYSON</h4><p>Desenvolvimento de Interfaces Web - Sistemas de Informação - Campus Betim - PBE - Noite - G1/T2 - 2023/1</p><p>Matricula: 790291</p></div>
         <div className="corousel">
         
         </div>
