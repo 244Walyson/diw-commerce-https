@@ -46,3 +46,24 @@
 .card-prod .img img {
   object-fit: cover;
 }
+
+@media screen and (max-width: 500px) {
+  .card-prod{
+    align-items: center;
+    justify-content: center;
+  }
+  .items{
+    max-width: 100%;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  .card-prod{
+    align-items: center;
+    justify-content: center;
+  }
+  .items{
+    max-width: 100%;
+    justify-content: center;
+  }
+}

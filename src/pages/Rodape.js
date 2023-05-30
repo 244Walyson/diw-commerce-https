@@ -31,7 +31,7 @@ const Rodape = () => {
         </div>
         
         
-        <div className="allrigth">AllRigths Resrved &copy Walyson Moises</div>
+        <div className="allrigth">AllRigths Resrved &copy; Walyson Moises</div>
 
         <div className="detalhes-a"></div>
         <div className="detalhes-b"></div>

@@ -17,3 +17,27 @@
 .socialmediashelp p{
     padding: 10px;
 }
+@media screen and (max-width: 800px) {
+    .help {
+      padding: 20px;
+    }
+  
+    .texthelp {
+      margin-top: 250px;
+      font-size: 30px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .socialmediashelp {
+      font-size: 40px;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .socialmediashelp p {
+      padding: 5px;
+      margin: 0 10px;
+    }
+  }
+  

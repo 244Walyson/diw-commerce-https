@@ -1,7 +1,17 @@
 .products{
     display: flex;
     flex-direction: column;
+    max-width: 100%;
 }
 .itemsproducts{
     margin-top: 280px;
+}
+@media (max-width: 900px) {
+    .walynameproducts{
+        margin-top: 150px;
+        max-width: 100%;
+    }
+    .itemsproducts{
+        margin-top: 400px;
+    }
 }

@@ -41,3 +41,47 @@
     margin-top: 90px;
     margin-bottom: -130px;
 }
+@media screen and (max-width: 800px) {
+    .about {
+      flex-direction: column;
+    }
+  
+    .imgabout {
+      margin-top: 500px;
+    }
+  
+    .imgabout img {
+      width: 250px;
+      height: 250px;
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
+  
+    .socialmediaabout {
+      margin-top: 20px;
+    }
+  
+    .textabout {
+      margin-top: 50px;
+      padding: 10px;
+      font-size: 16px;
+    }
+  
+    .logoname {
+      margin-top: 130px;
+    }
+  
+    .socialmediaabout {
+      font-size: 30px;
+      padding: 5px;
+      margin: 5px;
+      margin-top: -30px;
+      margin-bottom: 30px;
+    }
+  
+    .socialmediaabout p {
+      margin-top: 40px;
+      margin-bottom: -50px;
+    }
+  }
+  
