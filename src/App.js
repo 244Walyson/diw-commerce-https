@@ -24,8 +24,8 @@ function App() {
         <Route path='/help' element={<Help/>} />
         <Route path='/about' element={<About/>}/>
         <Route path="/search" element={<SearchPage/>}/>
-        <Route path='/category' element={<SearchByCategory/>}/>
-        <Route path='/category:' element={<ProductsByCategory/>}/>
+        <Route path="/products/category/:category" element={<SearchByCategory />} />
+        <Route path='' element={<ProductsByCategory/>}/>
         <Route path='/products/:id' element={<EspecificacaoProduto/>}/>
       </Routes>
       <Rodape/>

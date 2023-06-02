@@ -1,29 +1,82 @@
-import React from 'react'
 import styles from "./SearchByCategory.module.css"
-import WalyName from '../components/WalyName'
-import Items from '../components/Items'
 import { useFetch } from '../hooks/useFetch'
+import React, { useState } from 'react';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Link, useParams } from 'react-router-dom';
 
 const SearchByCategory = () => {
+  const { category } = useParams();
+  const [page, setPage] = useState(1);
+  const encodedCategory = encodeURIComponent(category); // Escapar caracteres especiais
+  const url = `https://diwserver.vps.webdock.cloud/products/category/${encodedCategory}?page=${page}`;
+  const { data: items, loading } = useFetch(url);
 
-    const url = "http://diwserver.vps.webdock.cloud:8765/products/categories";
-    const {data: items, loading} = useFetch(url);
+  const Rating = (rate) => {
+    const stars = [];
+    for (let i = 0; i < 5; i++) {
+        if(i<=rate){
+      stars.push(
+        <FontAwesomeIcon icon={faStar} className={styles.starcheia} />
+        );}
+      else{
+        stars.push(
+            <FontAwesomeIcon icon={faStar} className={styles.starvazia}/>
+      )}
+    }
+    return <div className={styles.stars}>{stars}</div>;
+  };
 
-    console.log(items)
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
 
   return (
-    <div className="products">
-    <div className="walynameproducts"><WalyName/></div>
-     <div className="itemsproducts">
-     <dvi className={styles.cardcategories}>
-        <ul>
-            {items && items.map((item)=>(
-                <li>{item}</li>
-            ))}
-        </ul>
-     </dvi>
-     </div>
-   </div>
+    <div className={styles.listproducts}>
+    {loading && <p>Carregando...</p>}
+    <ul className={styles.items}>
+      {items &&
+        items.products.map((item) => (
+          
+      <Link to={`/products/${item.id}`}>
+      <li key={item.id} className={styles.cardprod}> {/* Classe modificada para "card-prod" */}
+            <div className={styles.img}>
+              <img src={item.image} alt="" />
+            </div>
+            <h6>{item.title}</h6> {/* Adicionado {} para renderizar o valor da variável */}
+            <p>{Rating(item.rating.rate)} - {item.rating.count}</p>
+            <p>R${item.price}</p>
+          </li>
+      </Link>
+          ))}
+      </ul>
+      <div className={styles.buttonspages}>
+      <button
+          className={styles.previw}
+          onClick={() => {
+            scrollToTop();
+            setPage((prevPage) => Math.max(prevPage - 1, 0));
+          }}
+        >
+          {"<"}
+        </button>
+        <p>{page}</p>
+        <button
+          className={styles.next}
+          onClick={() => {
+            scrollToTop();
+            setPage((prevPage) => Math.min(prevPage + 1, 1214));
+          }}
+        >
+          {">"}
+        </button>
+      </div>
+    </div>
+
   )
 }
 

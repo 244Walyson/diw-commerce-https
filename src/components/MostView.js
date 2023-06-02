@@ -22,7 +22,7 @@ const MostView = () => {
   const url = () => {
     let url = '';
     if (seconds % 5 == 0) {
-      url = "http://diwserver.vps.webdock.cloud:8765/products?page=" + Math.floor(seconds-5);
+      url = "https://diwserver.vps.webdock.cloud/products?page="+ Math.floor(seconds-5);
     }
     return url;
   };
