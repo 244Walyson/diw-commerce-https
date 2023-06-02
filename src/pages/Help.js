@@ -11,7 +11,7 @@ const Help = () => {
           Se precisar de ajuda entre em contato comigo
         </p>
         <div className="socialmediashelp">
-        <p><FontAwesomeIcon icon={faGithub} className="iconsmedia"/></p>
+          <p><FontAwesomeIcon icon={faGithub} className="iconsmedia"/></p>
           <p><FontAwesomeIcon icon={faTwitter} className="iconsmedia"/></p>
           <p><FontAwesomeIcon icon={faInstagram} className="iconsmedia"/></p>
           <p><FontAwesomeIcon icon={faTelegram} className="iconsmedia"/></p>

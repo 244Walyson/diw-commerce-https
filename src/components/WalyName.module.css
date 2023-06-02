@@ -36,3 +36,15 @@
     width: 50%;
     
   }
+  @media (max-width: 900px) {
+    .headNameprod p {
+      margin-top: 0px;
+      font-size: 18px;
+      padding: 3px;
+    }
+  
+    .headNameprod {
+      max-width: 100%;
+      font-size: 50px;
+      text-align: center;
+    }}

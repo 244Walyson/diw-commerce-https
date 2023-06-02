@@ -11,7 +11,7 @@ const About = () => {
     <div className="logoname"><WalyName/></div>
     <div className="about">
       <div className="imgabout">
-        <img src="https://picsum.photos/536/354" alt="" />
+        <img src="" alt="" />
       </div>
         <div className="textabout">
           <p className="textparagraphyabout">

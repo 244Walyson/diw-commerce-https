@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .searchbycategory p{
   font-size: 30px;
   font-weight: 700;
@@ -14,6 +15,9 @@
 .searchbycategory p:hover{
   transform: scale(0.99);
 }
+=======
+
+>>>>>>> 4e773f2c39555080172d73038e5d7cdb79773cbc
 .headName p{
   margin-top: -60px;
   font-size: 20px;
@@ -85,17 +89,49 @@
 .mostview{
   margin-bottom: 40px;
 }
-.docasual{
-  margin-left: 20px;
-  font-size: 40px;
-  margin-top: 70px;
-  margin-bottom: -120px;
+
+
+
+@media (max-width: 900px) {
+  .headName p {
+    margin-top: 0px;
+    font-size: 18px;
+    padding: 3px;
+  }
+
+  .headName {
+    max-width: 100%;
+    font-size: 60px;
+    margin-top: 250px;
+  }
+  .mostviewq{
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    max-width: 100%;
+  }
 }
-.aoespojado{
-  margin-top: 500px;
-  font-size: 40px;
-  margin-left: 20px;
+
+@media (max-width: 550px) {
+  .headName p {
+    margin-top: -10px;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .headName {
+    font-size: 50px;
+    margin-top: 250px;
+    max-width: 100%;
+  }
+  .mostviewq{
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    max-width: 100%;
+  }
 }
+<<<<<<< HEAD
 .imagenrigth{
   margin-top: -610px;
   padding: 10px;
@@ -125,3 +161,5 @@
   text-decoration: none;
   color: #000000;
 }
+=======
+>>>>>>> 4e773f2c39555080172d73038e5d7cdb79773cbc

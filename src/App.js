@@ -12,6 +12,7 @@ import SearchByCategory from './pages/SearchByCategory';
 import ProductsByCategory from './pages/ProductsByCategory';
 import EspecificacaoProduto from './pages/EspecificacaoProduto';
 
+
 function App() {
   return (
     <div className="App">
