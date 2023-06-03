@@ -8,11 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Items = () => {
   const [page, setPage] = useState(1);
-<<<<<<< HEAD
   const url = "https://diwserver.vps.webdock.cloud/products?page="+page;
-=======
-  const url = "https://diwserver.vps.webdock.cloud/products?page="+ page;
->>>>>>> 4e773f2c39555080172d73038e5d7cdb79773cbc
   const { data: items, loading } = useFetch(url);
 
   const Rating = (rate) => {

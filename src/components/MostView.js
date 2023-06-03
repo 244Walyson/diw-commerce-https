@@ -21,14 +21,9 @@ const MostView = () => {
 
   const url = () => {
     let url = '';
-<<<<<<< HEAD
     if (seconds % 5 == 0) {
       url = "https://diwserver.vps.webdock.cloud/products?page="+ Math.floor(seconds-5);
     }
-=======
-    if(seconds%5===0)
-      url = "https://diwserver.vps.webdock.cloud/products?page="+seconds;
->>>>>>> 4e773f2c39555080172d73038e5d7cdb79773cbc
     return url;
   };
 

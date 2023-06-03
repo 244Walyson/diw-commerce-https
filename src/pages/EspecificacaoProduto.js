@@ -8,11 +8,7 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 const EspecificacaoProduto = () => {
     const {id} = useParams()
-<<<<<<< HEAD
     const url = "https://diwserver.vps.webdock.cloud/products/"+ id;
-=======
-    const url = "https://fakestoreapi.com/products/"+ id;
->>>>>>> 4e773f2c39555080172d73038e5d7cdb79773cbc
     const {data: items, loading} = useFetch(url)
 
     const Rating = (rate) => {

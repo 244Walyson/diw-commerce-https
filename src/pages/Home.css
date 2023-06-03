@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .searchbycategory p{
   font-size: 30px;
   font-weight: 700;
@@ -15,9 +14,6 @@
 .searchbycategory p:hover{
   transform: scale(0.99);
 }
-=======
-
->>>>>>> 4e773f2c39555080172d73038e5d7cdb79773cbc
 .headName p{
   margin-top: -60px;
   font-size: 20px;
@@ -131,7 +127,6 @@
     max-width: 100%;
   }
 }
-<<<<<<< HEAD
 .imagenrigth{
   margin-top: -610px;
   padding: 10px;
@@ -161,5 +156,3 @@
   text-decoration: none;
   color: #000000;
 }
-=======
->>>>>>> 4e773f2c39555080172d73038e5d7cdb79773cbc
