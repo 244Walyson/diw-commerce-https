@@ -9,7 +9,7 @@ import { useState } from 'react';
 const SearchPage = () => {
   const [page, setPage] = useState(1);
   const [searchParams] = useSearchParams();
-  const url = "http://diwserver.vps.webdock.cloud:8765/products/search?" + searchParams + "&page=" + page;
+  const url = "https://diwserver.vps.webdock.cloud/products/search?" + searchParams + "&page=" + page;
   const { data: items, loading } = useFetch(url);
 
 
