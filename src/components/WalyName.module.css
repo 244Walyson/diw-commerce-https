@@ -47,9 +47,11 @@
     .headName {
       max-width: 100%;
       font-size: 60px;
-      margin-top: 250px;
+      margin-top: 100px;
       text-align: center;
-      margin-bottom: -400px;
+    }
+    .headName h4{
+      font-size: 110px;
     }
 
   }
@@ -60,7 +62,9 @@
       font-size: 12px;
       margin-bottom: 10px;
     }
-  
+    .headName h4{
+      font-size: 50px;
+    }
     .headName {
       font-size: 50px;
       margin-top: 250px;
