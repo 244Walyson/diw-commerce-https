@@ -2,6 +2,9 @@
     min-height: 72vh;
     justify-content: center;
 }
+.ullists{
+  min-height: 45vh;
+}
 .next , .previw {
     font-size: 20px;
   }
